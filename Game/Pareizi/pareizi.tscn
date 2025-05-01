@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bb6tpnx4bcpco"]
+[gd_scene load_steps=3 format=3 uid="uid://bb6tpnx4bcpco"]
 
 [ext_resource type="Script" uid="uid://drph8j3k3vit" path="res://Game/Pareizi/Scripts/pareizi.gd" id="1_45gk6"]
+[ext_resource type="Texture2D" uid="uid://b4gmav1d5aljr" path="res://assets/white.png" id="2_tcmdo"]
 
 [node name="Pareizi" type="Node2D"]
 script = ExtResource("1_45gk6")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -30899.0
+offset_top = -8872.0
+offset_right = 32434.0
+offset_bottom = 15666.0
+texture = ExtResource("2_tcmdo")

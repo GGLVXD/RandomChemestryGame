@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctqgqqs22h77g"]
+[gd_scene load_steps=3 format=3 uid="uid://ctqgqqs22h77g"]
 
 [ext_resource type="Script" uid="uid://dgjyaav3egkoj" path="res://Game/Nepareizi/Scripts/nepareizi.gd" id="1_hrno0"]
+[ext_resource type="Texture2D" uid="uid://b4gmav1d5aljr" path="res://assets/white.png" id="2_onq48"]
 
 [node name="Nepareizi" type="Node2D"]
 script = ExtResource("1_hrno0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -39006.0
+offset_top = -22483.0
+offset_right = 39957.0
+offset_bottom = 21961.0
+texture = ExtResource("2_onq48")

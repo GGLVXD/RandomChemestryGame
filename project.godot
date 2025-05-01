@@ -21,11 +21,11 @@ boot_splash/image="uid://bdilii00vqy1"
 config/icon="uid://btdi44g3g1dp8"
 config/macos_native_icon="uid://btdi44g3g1dp8"
 config/windows_native_icon="uid://btdi44g3g1dp8"
-boot_splash/minimum_display_time=500
+boot_splash/minimum_display_time=5000
 
 [autoload]
 
-GlobalData="*res://Game/Scripts/GlobalData.gd"
+GlobalData="*res://GlobalData.gd"
 
 [debug]
 
@@ -67,3 +67,4 @@ down={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

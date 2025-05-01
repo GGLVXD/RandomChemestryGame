@@ -43,6 +43,7 @@ func show_target_category():
 	var label = Label.new()
 	label.text = "Samekle visas: " + target_category
 	label.add_theme_font_size_override("font_size", 24)
+	label.add_theme_color_override("font_color", Color(0, 0, 0))
 	label.position = Vector2(10, 10)
 	add_child(label)
 
@@ -57,6 +58,7 @@ func spawn_formulas():
 		
 		var label = Label.new()
 		label.text = formula
+		label.add_theme_color_override("font_color", Color(0, 0, 0))
 		formula_node.add_child(label)
 		
 		var shape = CollisionShape2D.new()
@@ -87,7 +89,6 @@ func get_random_position(used_positions):
 
 func _on_formula_collected(body, formula_node, formula):
 	if body is CharacterBody2D:
-		print("Saskāries ar:", formula)
 		if formula in correct_formulas:
 			collected.append(formula)
 			formula_node.queue_free()

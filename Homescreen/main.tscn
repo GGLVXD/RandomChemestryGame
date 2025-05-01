@@ -1,46 +1,63 @@
-[gd_scene load_steps=2 format=3 uid="uid://8bvjpsdp8vbs"]
+[gd_scene load_steps=3 format=3 uid="uid://8bvjpsdp8vbs"]
 
 [ext_resource type="Script" uid="uid://ddp3uu5en2jgq" path="res://Homescreen/Scripts/Play_and_rules_button.gd" id="1_eewap"]
+[ext_resource type="Texture2D" uid="uid://b4gmav1d5aljr" path="res://assets/white.png" id="1_ysugf"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
+anchor_left = 0.5
+anchor_top = 0.029
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -579.0
+offset_top = -15.792
+offset_right = -3.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.364
-anchor_top = 0.065
-anchor_right = 0.364
-anchor_bottom = 0.065
-offset_left = -0.328033
-offset_top = -0.120003
-offset_right = 280.672
-offset_bottom = 52.88
-theme_override_font_sizes/font_size = 38
-text = "Formulētājs"
+offset_left = -28753.0
+offset_top = -13624.0
+offset_right = 31204.0
+offset_bottom = 19348.0
+texture = ExtResource("1_ysugf")
 
 [node name="spelet" type="Button" parent="."]
-layout_mode = 0
 offset_left = 422.0
 offset_top = 127.0
 offset_right = 690.0
 offset_bottom = 199.0
 text = "Spēle"
 script = ExtResource("1_eewap")
+metadata/_edit_use_anchors_ = true
 
-[node name="noteikumi" type="Button" parent="."]
+[node name="noteikumi" type="Button" parent="spelet"]
 layout_mode = 0
-offset_left = 422.0
-offset_top = 205.0
-offset_right = 690.0
-offset_bottom = 277.0
+offset_top = 78.0
+offset_right = 268.0
+offset_bottom = 150.0
 text = "Noteikumi"
 script = ExtResource("1_eewap")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="spelet"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.896
+anchor_right = 0.5
+anchor_bottom = -0.896
+offset_left = -122.0
+offset_top = -12.488
+offset_right = 128.0
+offset_bottom = 53.512
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 43
+text = "Formulētājs"
 
 [connection signal="pressed" from="spelet" to="spelet" method="_on_spelet_pressed"]
-[connection signal="pressed" from="noteikumi" to="noteikumi" method="_on_noteikumi_pressed"]
+[connection signal="pressed" from="spelet/noteikumi" to="spelet/noteikumi" method="_on_noteikumi_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bp05u4n68wh7n"]
+[gd_scene load_steps=6 format=3 uid="uid://bp05u4n68wh7n"]
 
 [ext_resource type="Script" uid="uid://cj15svknexhu1" path="res://Game/Scripts/core.gd" id="1_iv3md"]
 [ext_resource type="Script" uid="uid://cna4l3dawhlfn" path="res://Game/Scripts/player_movement.gd" id="2_37esa"]
+[ext_resource type="Texture2D" uid="uid://b4gmav1d5aljr" path="res://assets/white.png" id="2_jxerj"]
 [ext_resource type="Texture2D" uid="uid://3qpnmi020tar" path="res://assets/Player.png" id="3_jxerj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_acwke"]
@@ -9,6 +10,13 @@ size = Vector2(40.4757, 47.693)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_iv3md")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -8161.0
+offset_top = -3339.0
+offset_right = 9752.0
+offset_bottom = 5542.0
+texture = ExtResource("2_jxerj")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("2_37esa")
