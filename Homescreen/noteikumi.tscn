@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://coudks7dxmqoo"]
+
+[ext_resource type="Script" uid="uid://bcpxamiy6164" path="res://Homescreen/Scripts/Back_to_home_button.gd" id="1_28d1c"]
+
+[node name="Noteikumi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 781.0
+offset_bottom = 126.0
+text = "Speles gaita: Tev ir cilveciņs kas jakontrolē (w, a, s, d) vai krusitņi uz tastatūras uz pareizam formulām
+ dalībnieku skaits: 1
+sākums un
+nobeigums: Ja tu pieskaries nepareizajai formulai, spēle beidzas.
+"
+
+[node name="atpakal" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.007
+offset_left = 8.0
+offset_top = 128.0
+offset_right = 147.936
+offset_bottom = 168.0
+text = "Atpakaļ"
+script = ExtResource("1_28d1c")
+
+[connection signal="pressed" from="atpakal" to="atpakal" method="_on_atpakal_pressed"]

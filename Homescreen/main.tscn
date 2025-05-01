@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://8bvjpsdp8vbs"]
 
-[ext_resource type="Script" uid="uid://ddp3uu5en2jgq" path="res://scripts/home/spele.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://ddp3uu5en2jgq" path="res://Homescreen/Scripts/Play_and_rules_button.gd" id="1_eewap"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -22,15 +22,25 @@ offset_top = -0.120003
 offset_right = 280.672
 offset_bottom = 52.88
 theme_override_font_sizes/font_size = 38
-text = "Kautkada spele"
+text = "Formulētājs"
 
-[node name="Button" type="Button" parent="."]
+[node name="spelet" type="Button" parent="."]
 layout_mode = 0
 offset_left = 422.0
 offset_top = 127.0
 offset_right = 690.0
 offset_bottom = 199.0
 text = "Spēle"
-script = ExtResource("1_ig7tw")
+script = ExtResource("1_eewap")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[node name="noteikumi" type="Button" parent="."]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 205.0
+offset_right = 690.0
+offset_bottom = 277.0
+text = "Noteikumi"
+script = ExtResource("1_eewap")
+
+[connection signal="pressed" from="spelet" to="spelet" method="_on_spelet_pressed"]
+[connection signal="pressed" from="noteikumi" to="noteikumi" method="_on_noteikumi_pressed"]
