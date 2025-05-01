@@ -11,13 +11,30 @@ config_version=5
 [application]
 
 config/name="Formuletajs"
+config/description="Spele kurā ir ar cilveciņu jakustina pa bazem"
+config/version="1.0.1"
 run/main_scene="res://Homescreen/main.tscn"
+run/disable_stderr=true
+run/print_header=false
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/image="uid://bdilii00vqy1"
+config/icon="uid://btdi44g3g1dp8"
+config/macos_native_icon="uid://btdi44g3g1dp8"
+config/windows_native_icon="uid://btdi44g3g1dp8"
+boot_splash/minimum_display_time=500
 
 [autoload]
 
 GlobalData="*res://Game/Scripts/GlobalData.gd"
+
+[debug]
+
+file_logging/enable_file_logging=true
+file_logging/log_path="user://logs/Fryde/formuletajs.log"
+
+[display]
+
+window/size/mode=2
 
 [input]
 
