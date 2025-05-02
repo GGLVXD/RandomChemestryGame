@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://8bvjpsdp8vbs"]
+[gd_scene load_steps=4 format=3 uid="uid://8bvjpsdp8vbs"]
 
 [ext_resource type="Script" uid="uid://ddp3uu5en2jgq" path="res://Homescreen/Scripts/Play_and_rules_button.gd" id="1_eewap"]
+[ext_resource type="Script" uid="uid://csba5m2xc3h08" path="res://Homescreen/Scripts/core.gd" id="1_tvhcn"]
 [ext_resource type="Texture2D" uid="uid://b4gmav1d5aljr" path="res://assets/white.png" id="1_ysugf"]
 
 [node name="Control" type="Control"]
@@ -15,6 +16,7 @@ offset_right = -3.0
 offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tvhcn")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -25,6 +27,7 @@ offset_bottom = 19348.0
 texture = ExtResource("1_ysugf")
 
 [node name="spelet" type="Button" parent="."]
+layout_mode = 0
 offset_left = 422.0
 offset_top = 127.0
 offset_right = 690.0

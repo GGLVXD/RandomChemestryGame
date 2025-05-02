@@ -1,8 +1,10 @@
 extends Node2D
 
-
 # Win text
 func _ready():
+	GlobalData.wins = GlobalData.wins + 1
+	GlobalData.save()
+	print(GlobalData.wins)
 	var label = Label.new()
 	label.text = "Tu vinnēji!!!!"
 	label.add_theme_font_size_override("font_size", 24)

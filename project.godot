@@ -12,10 +12,12 @@ config_version=5
 
 config/name="Formuletajs"
 config/description="Spele kurā ir ar cilveciņu jakustina pa bazem"
-config/version="1.0.1"
+config/version="1.0.2"
 run/main_scene="res://Homescreen/main.tscn"
 run/disable_stderr=true
 run/print_header=false
+config/use_custom_user_dir=true
+config/custom_user_dir_name="formuletajs"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/image="uid://bdilii00vqy1"
 config/icon="uid://btdi44g3g1dp8"

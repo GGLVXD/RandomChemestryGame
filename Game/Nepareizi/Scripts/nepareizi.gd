@@ -2,6 +2,9 @@ extends Node2D
 
 # Wrong text
 func _ready():
+	GlobalData.loses = GlobalData.loses + 1
+	print(GlobalData.loses)
+	GlobalData.save()
 	var label = Label.new()
 	label.text = "Tu pieskāries: " + GlobalData.incorrect_formula + "\nTas ir: " + GlobalData.correct_category
 	label.add_theme_font_size_override("font_size", 24)
