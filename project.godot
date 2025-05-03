@@ -37,6 +37,8 @@ file_logging/log_path="user://logs/Fryde/formuletajs.log"
 [display]
 
 window/size/mode=2
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
 
 [input]
 
